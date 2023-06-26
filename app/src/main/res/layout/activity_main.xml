@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EEEEEE"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Courses App"
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp"
+            android:textColor="#00ADB5"
+            android:textStyle="bold|italic"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeLottie"
+            app:lottie_rawRes="@raw/learn"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <Button
+            android:id="@+id/btn_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_rounded_input_field"
+            android:text="Admin Login"
+            app:backgroundTint="#00ADB5"
+            android:textAllCaps="false"
+            android:textColor="#414141"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_tutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_admin"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_rounded_input_field"
+            android:text="Tutor Login"
+            android:textAllCaps="false"
+            android:textColor="#414141"
+            app:backgroundTint="#00ADB5"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_tutor"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_rounded_input_field"
+            android:text="User Login"
+            android:textAllCaps="false"
+            app:backgroundTint="#00ADB5"
+            android:textColor="#414141"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>
